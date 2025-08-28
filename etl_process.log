@@ -1,0 +1,435 @@
+2025-08-12 22:30:27,491 - INFO - Начало ETL-процесса
+2025-08-12 22:30:27,492 - ERROR - Отсутствуют следующие файлы:
+data\ft_balance_f.csv
+data\ft_posting_f.csv
+data\md_account_d.csv
+data\md_currency_d.csv
+data\md_exchange_rate_d.csv
+data\md_ledger_account_s.csv
+2025-08-12 22:30:27,492 - ERROR - Критическая ошибка ETL-процесса: Отсутствуют следующие файлы:
+data\ft_balance_f.csv
+data\ft_posting_f.csv
+data\md_account_d.csv
+data\md_currency_d.csv
+data\md_exchange_rate_d.csv
+data\md_ledger_account_s.csv
+2025-08-12 22:30:27,493 - CRITICAL - Завершение работы с ошибкой: Отсутствуют следующие файлы:
+data\ft_balance_f.csv
+data\ft_posting_f.csv
+data\md_account_d.csv
+data\md_currency_d.csv
+data\md_exchange_rate_d.csv
+data\md_ledger_account_s.csv
+2025-08-12 22:38:03,168 - INFO - Начало ETL-процесса
+2025-08-12 22:38:03,169 - INFO - Все CSV файлы найдены
+2025-08-12 22:38:03,287 - INFO - Пауза 5 секунд...
+2025-08-12 22:38:08,297 - INFO - Загрузка данных в таблицу FT_BALANCE_F из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-12 22:38:08,299 - WARNING - В файле C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv отсутствуют колонки: {'on_date', 'currency_rk', 'balance_out', 'account_rk'}
+2025-08-12 22:38:08,304 - ERROR - Ошибка при загрузке таблицы FT_BALANCE_F: ОШИБКА:  ошибка синтаксиса (примерное положение: ")")
+LINE 1: INSERT INTO DS."FT_BALANCE_F" () VALUES ()
+                                       ^
+
+2025-08-12 22:38:08,305 - ERROR - Ошибка при логировании: ОШИБКА:  текущая транзакция прервана, команды до конца блока транзакции игнорируются
+
+2025-08-12 22:38:08,305 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки FT_BALANCE_F
+2025-08-12 22:38:08,306 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки FT_BALANCE_F
+2025-08-12 23:43:12,434 - INFO - Начало ETL-процесса
+2025-08-12 23:43:12,434 - INFO - Все CSV файлы найдены
+2025-08-12 23:43:12,543 - INFO - Пауза 5 секунд...
+2025-08-12 23:43:17,558 - INFO - Загрузка данных в таблицу FT_BALANCE_F из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-12 23:43:17,580 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-12 23:43:17,580 - ERROR - Ошибка при загрузке таблицы FT_BALANCE_F: В файле отсутствуют обязательные колонки: {'balance_out', 'account_rk', 'on_date', 'currency_rk'}
+2025-08-12 23:43:17,582 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки FT_BALANCE_F
+2025-08-12 23:43:17,582 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки FT_BALANCE_F
+2025-08-12 23:48:19,445 - INFO - Начало ETL-процесса
+2025-08-12 23:48:19,446 - INFO - Все CSV файлы найдены
+2025-08-12 23:48:19,549 - INFO - Пауза 5 секунд...
+2025-08-12 23:48:24,557 - INFO - Загрузка данных в таблицу FT_BALANCE_F из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-12 23:48:24,562 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-12 23:48:24,585 - ERROR - Ошибка при загрузке таблицы FT_BALANCE_F: ОШИБКА:  отношение "ds.FT_BALANCE_F" не существует
+LINE 1: INSERT INTO DS."FT_BALANCE_F" ("ON_DATE", "ACCOUNT_RK", "CUR...
+                    ^
+
+2025-08-12 23:48:24,586 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки FT_BALANCE_F
+2025-08-12 23:48:24,587 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки FT_BALANCE_F
+2025-08-13 13:38:34,554 - INFO - \u0421\u0442\u0430\u0440\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u0444\u0430\u0439\u043b\u0430 ft_balance_f.csv \u0432 \u0442\u0430\u0431\u043b\u0438\u0446\u0443 ds.ft_balance_f
+2025-08-13 13:38:34,564 - ERROR - \u041e\u0448\u0438\u0431\u043a\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u043a \u0411\u0414: \u041e\u0428\u0418\u0411\u041a\u0410:  \u0441\u0442\u043e\u043b\u0431\u0435\u0446 "id" \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442
+LINE 3: ...-08-13T13:38:34.555769'::timestamp, 'started') RETURNING id;
+                                                                    ^
+
+2025-08-13 13:41:33,887 - INFO - Начало ETL-процесса
+2025-08-13 13:41:33,888 - INFO - Все CSV файлы найдены
+2025-08-13 13:41:34,145 - INFO - Пауза 5 секунд...
+2025-08-13 13:41:39,159 - INFO - Загрузка данных в таблицу FT_BALANCE_F из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 13:41:39,170 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 13:41:39,210 - ERROR - Ошибка при загрузке таблицы FT_BALANCE_F: ОШИБКА:  отношение "ds.FT_BALANCE_F" не существует
+LINE 1: INSERT INTO DS."FT_BALANCE_F" ("ON_DATE", "ACCOUNT_RK", "CUR...
+                    ^
+
+2025-08-13 13:41:39,213 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки FT_BALANCE_F
+2025-08-13 13:41:39,213 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки FT_BALANCE_F
+2025-08-13 13:45:01,132 - INFO - Начало ETL-процесса
+2025-08-13 13:45:01,133 - INFO - Все CSV файлы найдены
+2025-08-13 13:45:01,295 - INFO - Пауза 5 секунд...
+2025-08-13 13:45:06,298 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 13:45:06,303 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 13:45:06,304 - ERROR - Ошибка при загрузке таблицы ft_balance_f: В файле отсутствуют обязательные колонки: {'on_date', 'balance_out', 'currency_rk', 'account_rk'}
+2025-08-13 13:45:06,306 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки ft_balance_f
+2025-08-13 13:45:06,306 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки ft_balance_f
+2025-08-13 13:47:35,479 - INFO - Начало ETL-процесса
+2025-08-13 13:47:35,480 - INFO - Все CSV файлы найдены
+2025-08-13 13:47:35,584 - INFO - Пауза 5 секунд...
+2025-08-13 13:47:40,590 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 13:47:40,599 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 13:47:40,599 - ERROR - Ошибка при загрузке таблицы ft_balance_f: В файле отсутствуют обязательные колонки: {'on_date', 'account_rk', 'currency_rk', 'balance_out'}
+2025-08-13 13:47:40,601 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки ft_balance_f
+2025-08-13 13:47:40,601 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки ft_balance_f
+2025-08-13 14:04:54,096 - INFO - Начало ETL-процесса
+2025-08-13 14:04:54,097 - INFO - Все CSV файлы найдены
+2025-08-13 14:04:54,234 - INFO - Пауза 5 секунд...
+2025-08-13 14:04:59,248 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:04:59,257 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:04:59,257 - ERROR - Ошибка при загрузке таблицы ft_balance_f: В файле отсутствуют обязательные колонки: {'currency_rk', 'on_date', 'account_rk', 'balance_out'}
+2025-08-13 14:04:59,259 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки ft_balance_f
+2025-08-13 14:04:59,259 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки ft_balance_f
+2025-08-13 14:09:04,026 - INFO - Начало ETL-процесса
+2025-08-13 14:09:04,026 - INFO - Все CSV файлы найдены
+2025-08-13 14:09:04,136 - INFO - Пауза 5 секунд...
+2025-08-13 14:09:09,143 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:09:09,154 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:09:09,166 - ERROR - Ошибка при загрузке таблицы ft_balance_f: ОШИБКА:  столбец "ON_DATE" в таблице "ft_balance_f" не существует
+LINE 1: INSERT INTO ds."ft_balance_f" ("ON_DATE", "ACCOUNT_RK", "CUR...
+                                       ^
+
+2025-08-13 14:09:09,168 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки ft_balance_f
+2025-08-13 14:09:09,168 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки ft_balance_f
+2025-08-13 14:14:14,388 - INFO - Начало ETL-процесса
+2025-08-13 14:14:14,389 - INFO - Все CSV файлы найдены
+2025-08-13 14:14:14,498 - INFO - Пауза 5 секунд...
+2025-08-13 14:14:19,503 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:14:19,505 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:14:19,547 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-13 14:14:19,548 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-13 14:14:19,564 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-13 14:14:19,565 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:14:33,252 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-13 14:14:33,253 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-13 14:14:33,254 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:14:33,312 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-13 14:14:33,313 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-13 14:14:33,314 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:14:33,335 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-13 14:14:33,336 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-13 14:14:33,337 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:14:33,430 - ERROR - Ошибка при загрузке таблицы md_exchange_rate_d: ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "md_exchange_rate_d_pkey"
+DETAIL:  Ключ "(data_actual_date, currency_rk)=(2018-01-27, 427870281)" уже существует.
+
+2025-08-13 14:14:33,431 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:14:33,432 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:20:40,262 - INFO - Начало ETL-процесса
+2025-08-13 14:20:40,263 - INFO - Все CSV файлы найдены
+2025-08-13 14:20:40,419 - INFO - Пауза 5 секунд...
+2025-08-13 14:20:45,422 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:20:45,431 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:20:45,449 - ERROR - Ошибка при загрузке таблицы ft_balance_f: ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "ft_balance_f_pkey"
+DETAIL:  Ключ "(on_date, account_rk)=(2017-12-31, 36237725)" уже существует.
+
+2025-08-13 14:20:45,451 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки ft_balance_f
+2025-08-13 14:20:45,451 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки ft_balance_f
+2025-08-13 14:24:26,135 - INFO - Начало ETL-процесса
+2025-08-13 14:24:26,135 - INFO - Все CSV файлы найдены
+2025-08-13 14:24:26,769 - INFO - Пауза 5 секунд...
+2025-08-13 14:24:31,772 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:24:31,782 - INFO - Таблица ft_balance_f очищена перед загрузкой
+2025-08-13 14:24:31,784 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:24:31,831 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-13 14:24:31,832 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-13 14:24:31,849 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-13 14:24:31,849 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:24:43,754 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-13 14:24:43,755 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-13 14:24:43,768 - INFO - Таблица md_account_d очищена перед загрузкой
+2025-08-13 14:24:43,769 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:24:43,825 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-13 14:24:43,827 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-13 14:24:43,837 - INFO - Таблица md_currency_d очищена перед загрузкой
+2025-08-13 14:24:43,837 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:24:43,858 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-13 14:24:43,859 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-13 14:24:43,869 - INFO - Таблица md_exchange_rate_d очищена перед загрузкой
+2025-08-13 14:24:43,871 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:24:43,958 - ERROR - Ошибка при загрузке таблицы md_exchange_rate_d: ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "md_exchange_rate_d_pkey"
+DETAIL:  Ключ "(data_actual_date, currency_rk)=(2018-01-27, 427870281)" уже существует.
+
+2025-08-13 14:24:43,959 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:24:43,960 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:29:16,623 - INFO - Начало ETL-процесса
+2025-08-13 14:29:16,624 - INFO - Все CSV файлы найдены
+2025-08-13 14:29:16,736 - INFO - Пауза 5 секунд...
+2025-08-13 14:29:21,738 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:29:21,750 - INFO - Таблица ft_balance_f очищена перед загрузкой
+2025-08-13 14:29:21,751 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:29:21,794 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-13 14:29:21,796 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-13 14:29:21,810 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-13 14:29:21,811 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:29:33,307 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-13 14:29:33,309 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-13 14:29:33,321 - INFO - Таблица md_account_d очищена перед загрузкой
+2025-08-13 14:29:33,322 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:29:33,373 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-13 14:29:33,375 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-13 14:29:33,386 - INFO - Таблица md_currency_d очищена перед загрузкой
+2025-08-13 14:29:33,386 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:29:33,409 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-13 14:29:33,411 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-13 14:29:33,420 - INFO - Таблица md_exchange_rate_d очищена перед загрузкой
+2025-08-13 14:29:33,420 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:29:33,497 - ERROR - Ошибка при загрузке таблицы md_exchange_rate_d: ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "md_exchange_rate_d_pkey"
+DETAIL:  Ключ "(data_actual_date, currency_rk)=(2018-01-27, 427870281)" уже существует.
+
+2025-08-13 14:29:33,499 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:29:33,499 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:33:13,949 - INFO - Начало ETL-процесса
+2025-08-13 14:33:13,949 - INFO - Все CSV файлы найдены
+2025-08-13 14:33:14,064 - INFO - Пауза 5 секунд...
+2025-08-13 14:33:19,070 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:33:19,080 - INFO - Таблица ft_balance_f очищена перед загрузкой
+2025-08-13 14:33:19,081 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:33:19,127 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-13 14:33:19,129 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-13 14:33:19,142 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-13 14:33:19,142 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:33:30,523 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-13 14:33:30,524 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-13 14:33:30,538 - INFO - Таблица md_account_d очищена перед загрузкой
+2025-08-13 14:33:30,539 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:33:30,595 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-13 14:33:30,597 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-13 14:33:30,610 - INFO - Таблица md_currency_d очищена перед загрузкой
+2025-08-13 14:33:30,610 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:33:30,638 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-13 14:33:30,640 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-13 14:33:30,650 - INFO - Таблица md_exchange_rate_d очищена перед загрузкой
+2025-08-13 14:33:30,650 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:33:30,752 - ERROR - Ошибка при загрузке таблицы md_exchange_rate_d: ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "md_exchange_rate_d_pkey"
+DETAIL:  Ключ "(data_actual_date, currency_rk)=(2018-01-27, 29)" уже существует.
+
+2025-08-13 14:33:30,755 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:33:30,755 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки md_exchange_rate_d
+2025-08-13 14:37:02,451 - INFO - Начало ETL-процесса
+2025-08-13 14:37:02,451 - INFO - Все CSV файлы найдены
+2025-08-13 14:37:02,562 - INFO - Пауза 5 секунд...
+2025-08-13 14:37:07,563 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 14:37:07,578 - INFO - Таблица ft_balance_f очищена перед загрузкой
+2025-08-13 14:37:07,580 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:37:07,637 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-13 14:37:07,638 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-13 14:37:07,651 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-13 14:37:07,652 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-13 14:37:18,980 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-13 14:37:18,981 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-13 14:37:18,994 - INFO - Таблица md_account_d очищена перед загрузкой
+2025-08-13 14:37:18,995 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:37:19,052 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-13 14:37:19,054 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-13 14:37:19,065 - INFO - Таблица md_currency_d очищена перед загрузкой
+2025-08-13 14:37:19,065 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:37:19,088 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-13 14:37:19,089 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-13 14:37:19,101 - INFO - Таблица md_exchange_rate_d очищена перед загрузкой
+2025-08-13 14:37:19,102 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-13 14:37:19,460 - INFO - Успешно загружено 891 строк в таблицу md_exchange_rate_d
+2025-08-13 14:37:19,462 - INFO - Загрузка данных в таблицу md_ledger_account_s из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv
+2025-08-13 14:37:19,467 - INFO - Таблица md_ledger_account_s очищена перед загрузкой
+2025-08-13 14:37:19,467 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv: разделитель=';', квотирование='"'
+2025-08-13 14:37:19,467 - ERROR - Ошибка при загрузке таблицы md_ledger_account_s: В файле отсутствуют обязательные колонки: {'is_reserved_assets', 'min_term', 'is_resident', 'is_reserve', 'min_term_measure', 'is_revaluation', 'is_loan', 'is_rub_only', 'is_interest', 'is_overdue', 'pair_account', 'is_reserved', 'max_term_measure', 'max_term', 'is_correct', 'ledger_acc_full_name_translit'}
+2025-08-13 14:37:19,470 - ERROR - Критическая ошибка ETL-процесса: Ошибка загрузки md_ledger_account_s
+2025-08-13 14:37:19,470 - CRITICAL - Завершение работы с ошибкой: Ошибка загрузки md_ledger_account_s
+2025-08-13 15:04:59,413 - INFO - Начало ETL-процесса
+2025-08-13 15:04:59,414 - INFO - Все CSV файлы найдены
+2025-08-13 15:04:59,519 - INFO - Пауза 5 секунд...
+2025-08-13 15:05:04,531 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-13 15:05:04,546 - INFO - Таблица ft_balance_f очищена перед загрузкой
+2025-08-13 15:05:04,548 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-13 15:05:04,595 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-13 15:05:04,597 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-13 15:05:04,612 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-13 15:05:04,613 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-13 15:05:16,542 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-13 15:05:16,543 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-13 15:05:16,560 - INFO - Таблица md_account_d очищена перед загрузкой
+2025-08-13 15:05:16,561 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-13 15:05:16,607 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-13 15:05:16,608 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-13 15:05:16,631 - INFO - Таблица md_currency_d очищена перед загрузкой
+2025-08-13 15:05:16,632 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-13 15:05:16,657 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-13 15:05:16,659 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-13 15:05:16,666 - INFO - Таблица md_exchange_rate_d очищена перед загрузкой
+2025-08-13 15:05:16,666 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-13 15:05:17,024 - INFO - Успешно загружено 891 строк в таблицу md_exchange_rate_d
+2025-08-13 15:05:17,025 - INFO - Загрузка данных в таблицу md_ledger_account_s из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv
+2025-08-13 15:05:17,031 - INFO - Таблица md_ledger_account_s очищена перед загрузкой
+2025-08-13 15:05:17,032 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv: разделитель=';', квотирование='"'
+2025-08-13 15:05:17,045 - INFO - Успешно загружено 18 строк в таблицу md_ledger_account_s
+2025-08-13 15:05:17,047 - INFO - ETL-процесс успешно завершен за 0:00:17.633381
+2025-08-15 23:50:32,837 - INFO - Начало ETL-процесса
+2025-08-15 23:50:32,840 - INFO - Все CSV файлы найдены
+2025-08-15 23:50:32,976 - INFO - Пауза 5 секунд...
+2025-08-15 23:50:37,976 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-15 23:50:37,993 - INFO - Таблица ft_balance_f очищена перед загрузкой
+2025-08-15 23:50:38,003 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-15 23:50:38,079 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-15 23:50:38,081 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-15 23:50:38,094 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-15 23:50:38,095 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-15 23:50:50,387 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-15 23:50:50,388 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-15 23:50:50,402 - INFO - Таблица md_account_d очищена перед загрузкой
+2025-08-15 23:50:50,403 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-15 23:50:50,465 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-15 23:50:50,468 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-15 23:50:50,477 - INFO - Таблица md_currency_d очищена перед загрузкой
+2025-08-15 23:50:50,478 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-15 23:50:50,503 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-15 23:50:50,504 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-15 23:50:50,511 - INFO - Таблица md_exchange_rate_d очищена перед загрузкой
+2025-08-15 23:50:50,512 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-15 23:50:50,910 - INFO - Успешно загружено 891 строк в таблицу md_exchange_rate_d
+2025-08-15 23:50:50,912 - INFO - Загрузка данных в таблицу md_ledger_account_s из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv
+2025-08-15 23:50:50,916 - INFO - Таблица md_ledger_account_s очищена перед загрузкой
+2025-08-15 23:50:50,918 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv: разделитель=';', квотирование='"'
+2025-08-15 23:50:50,930 - INFO - Успешно загружено 18 строк в таблицу md_ledger_account_s
+2025-08-15 23:50:50,932 - INFO - ETL-процесс успешно завершен за 0:00:18.094512
+2025-08-26 21:15:29,074 - INFO - Начало ETL-процесса
+2025-08-26 21:15:29,077 - INFO - Все CSV файлы найдены
+2025-08-26 21:15:29,302 - INFO - Пауза 5 секунд...
+2025-08-26 21:15:34,312 - INFO - Загрузка данных в таблицу ft_balance_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv
+2025-08-26 21:15:34,344 - INFO - Таблица ft_balance_f очищена перед загрузкой
+2025-08-26 21:15:34,362 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_balance_f.csv: разделитель=';', квотирование='"'
+2025-08-26 21:15:34,504 - INFO - Успешно загружено 114 строк в таблицу ft_balance_f
+2025-08-26 21:15:34,506 - INFO - Загрузка данных в таблицу ft_posting_f из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv
+2025-08-26 21:15:34,532 - INFO - Таблица ft_posting_f очищена перед загрузкой
+2025-08-26 21:15:34,534 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\ft_posting_f.csv: разделитель=';', квотирование='"'
+2025-08-26 21:15:56,666 - INFO - Успешно загружено 33892 строк в таблицу ft_posting_f
+2025-08-26 21:15:56,667 - INFO - Загрузка данных в таблицу md_account_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv
+2025-08-26 21:15:56,684 - INFO - Таблица md_account_d очищена перед загрузкой
+2025-08-26 21:15:56,685 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_account_d.csv: разделитель=';', квотирование='"'
+2025-08-26 21:15:56,764 - INFO - Успешно загружено 112 строк в таблицу md_account_d
+2025-08-26 21:15:56,766 - INFO - Загрузка данных в таблицу md_currency_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv
+2025-08-26 21:15:56,780 - INFO - Таблица md_currency_d очищена перед загрузкой
+2025-08-26 21:15:56,781 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_currency_d.csv: разделитель=';', квотирование='"'
+2025-08-26 21:15:56,821 - INFO - Успешно загружено 50 строк в таблицу md_currency_d
+2025-08-26 21:15:56,823 - INFO - Загрузка данных в таблицу md_exchange_rate_d из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv
+2025-08-26 21:15:56,833 - INFO - Таблица md_exchange_rate_d очищена перед загрузкой
+2025-08-26 21:15:56,834 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_exchange_rate_d.csv: разделитель=';', квотирование='"'
+2025-08-26 21:15:57,638 - INFO - Успешно загружено 891 строк в таблицу md_exchange_rate_d
+2025-08-26 21:15:57,641 - INFO - Загрузка данных в таблицу md_ledger_account_s из файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv
+2025-08-26 21:15:57,648 - INFO - Таблица md_ledger_account_s очищена перед загрузкой
+2025-08-26 21:15:57,650 - INFO - Определен формат файла C:\Users\Tanya\PycharmProjects\PythonProject3\data\md_ledger_account_s.csv: разделитель=';', квотирование='"'
+2025-08-26 21:15:57,674 - INFO - Успешно загружено 18 строк в таблицу md_ledger_account_s
+2025-08-26 21:15:57,678 - INFO - ETL-процесс успешно завершен за 0:00:28.604085
+2025-08-28 21:45:40,818 - INFO - ==================================================
+2025-08-28 21:45:40,818 - INFO - ЭКСПОРТ/ИМПОРТ ДАННЫХ В CSV
+2025-08-28 21:45:40,818 - INFO - ==================================================
+2025-08-28 21:45:40,818 - INFO - ШАГ 1: Экспорт данных в CSV
+2025-08-28 21:45:40,911 - INFO - Успешное подключение к базе данных
+2025-08-28 21:45:40,911 - INFO - Начало экспорта данных из таблицы dm.dm_f101_round_f
+2025-08-28 21:45:40,937 - INFO - Успешно экспортировано 18 строк в файл dm_f101_round_f_export.csv
+2025-08-28 21:45:40,938 - INFO - Отключение от базы данных
+2025-08-28 21:45:40,938 - INFO - Экспорт завершен успешно
+2025-08-28 21:45:40,938 - INFO - ШАГ 2: Создание копии таблицы
+2025-08-28 21:45:41,025 - INFO - Успешное подключение к базе данных
+2025-08-28 21:45:41,026 - INFO - Создание копии таблицы dm.dm_f101_round_f -> dm.dm_f101_round_f_v2
+2025-08-28 21:45:41,048 - INFO - Таблица dm.dm_f101_round_f_v2 успешно создана
+2025-08-28 21:45:41,049 - INFO - Отключение от базы данных
+2025-08-28 21:45:41,049 - INFO - Копия таблицы создана успешно
+2025-08-28 21:45:41,049 - INFO - ШАГ 3: Импорт данных из CSV
+2025-08-28 21:45:41,049 - INFO - Начало импорта данных из dm_f101_round_f_export.csv в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:45:41,151 - INFO - Успешное подключение к базе данных
+2025-08-28 21:45:41,161 - ERROR - Ошибка при импорте данных: ОШИБКА:  неверный синтаксис для типа numeric: ""
+LINE 3: ...0', '149647.04000000', '0E-8', '149647.04000000', '', '0E-8'...
+                                                             ^
+
+2025-08-28 21:45:41,162 - INFO - Отключение от базы данных
+2025-08-28 21:45:41,162 - ERROR - Ошибка импорта
+2025-08-28 21:47:31,455 - INFO - ==================================================
+2025-08-28 21:47:31,456 - INFO - ЭКСПОРТ/ИМПОРТ ДАННЫХ В CSV
+2025-08-28 21:47:31,456 - INFO - ==================================================
+2025-08-28 21:47:31,456 - INFO - ШАГ 1: Экспорт данных в CSV
+2025-08-28 21:47:31,551 - INFO - Успешное подключение к базе данных
+2025-08-28 21:47:31,551 - INFO - Начало экспорта данных из таблицы dm.dm_f101_round_f
+2025-08-28 21:47:31,568 - INFO - Успешно экспортировано 18 строк в файл dm_f101_round_f_export.csv
+2025-08-28 21:47:31,570 - INFO - Отключение от базы данных
+2025-08-28 21:47:31,570 - INFO - Экспорт завершен успешно
+2025-08-28 21:47:31,570 - INFO - ШАГ 2: Создание копии таблицы
+2025-08-28 21:47:31,689 - INFO - Успешное подключение к базе данных
+2025-08-28 21:47:31,689 - INFO - Создание копии таблицы dm.dm_f101_round_f -> dm.dm_f101_round_f_v2
+2025-08-28 21:47:31,706 - INFO - Таблица dm.dm_f101_round_f_v2 успешно создана
+2025-08-28 21:47:31,706 - INFO - Отключение от базы данных
+2025-08-28 21:47:31,707 - INFO - Копия таблицы создана успешно
+2025-08-28 21:47:31,707 - INFO - ШАГ 3: Импорт данных из CSV
+2025-08-28 21:47:31,707 - INFO - Начало импорта данных из dm_f101_round_f_export.csv в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:47:31,808 - INFO - Успешное подключение к базе данных
+2025-08-28 21:47:31,818 - INFO - Успешно импортировано 18 строк в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:47:31,818 - INFO - Отключение от базы данных
+2025-08-28 21:47:31,819 - INFO - Импорт завершен успешно
+2025-08-28 21:47:31,819 - INFO - ==================================================
+2025-08-28 21:47:31,819 - INFO - ПРОЦЕСС ЗАВЕРШЕН
+2025-08-28 21:47:31,819 - INFO - ==================================================
+2025-08-28 21:48:48,102 - INFO - ==================================================
+2025-08-28 21:48:48,102 - INFO - МОДИФИКАЦИЯ CSV ФАЙЛА
+2025-08-28 21:48:48,102 - INFO - ==================================================
+2025-08-28 21:48:48,103 - INFO - Модификация файла: dm_f101_round_f_export.csv
+2025-08-28 21:48:48,103 - ERROR - Ошибка при модификации CSV: could not convert string to float: '2018-01-31'
+2025-08-28 21:48:48,103 - INFO - 
+ШАГ 2: Импорт модифицированных данных
+2025-08-28 21:48:48,169 - INFO - Импорт модифицированного файла: dm_f101_round_f_export.csv
+2025-08-28 21:48:48,308 - INFO - Успешное подключение к базе данных
+2025-08-28 21:48:48,322 - INFO - Отключение от базы данных
+2025-08-28 21:48:48,322 - INFO - Начало импорта данных из dm_f101_round_f_export.csv в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:48:48,429 - INFO - Успешное подключение к базе данных
+2025-08-28 21:48:48,438 - INFO - Успешно импортировано 18 строк в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:48:48,439 - INFO - Отключение от базы данных
+2025-08-28 21:48:48,439 - INFO - Модифицированные данные успешно импортированы
+2025-08-28 21:48:48,439 - INFO - ==================================================
+2025-08-28 21:48:48,439 - INFO - ПРОЦЕСС МОДИФИКАЦИИ ЗАВЕРШЕН
+2025-08-28 21:48:48,440 - INFO - ==================================================
+2025-08-28 21:54:27,576 - INFO - ==================================================
+2025-08-28 21:54:27,577 - INFO - МОДИФИКАЦИЯ CSV ФАЙЛА
+2025-08-28 21:54:27,577 - INFO - ==================================================
+2025-08-28 21:54:27,577 - INFO - Модификация файла: dm_f101_round_f_export.csv
+2025-08-28 21:54:27,578 - INFO - Создан модифицированный файл: dm_f101_round_f_export_modified.csv
+2025-08-28 21:54:27,579 - INFO - Внесено изменений: 3
+2025-08-28 21:54:27,579 - INFO - Изменение: строка 18, колонка 13: 15781776.55000000 -> 15782630.55
+2025-08-28 21:54:27,579 - INFO - Изменение: строка 2, колонка 12: 162558540.25700800 -> 162558943.257008
+2025-08-28 21:54:27,579 - INFO - Изменение: строка 9, колонка 10:  -> MODIFIED_215427
+2025-08-28 21:54:27,579 - INFO - 
+ШАГ 2: Импорт модифицированных данных
+2025-08-28 21:54:27,636 - INFO - Импорт модифицированного файла: dm_f101_round_f_export_modified.csv
+2025-08-28 21:54:27,724 - INFO - Успешное подключение к базе данных
+2025-08-28 21:54:27,732 - INFO - Отключение от базы данных
+2025-08-28 21:54:27,732 - INFO - Начало импорта данных из dm_f101_round_f_export_modified.csv в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:54:27,827 - INFO - Успешное подключение к базе данных
+2025-08-28 21:54:27,841 - ERROR - Ошибка при импорте данных: ОШИБКА:  неверный синтаксис для типа numeric: "MODIFIED_215427"
+LINE 3: ...47412.80000000', '21517297.87000000', NULL, NULL, 'MODIFIED_...
+                                                             ^
+
+2025-08-28 21:54:27,842 - INFO - Отключение от базы данных
+2025-08-28 21:54:27,842 - ERROR - Ошибка импорта модифицированных данных
+2025-08-28 21:54:27,842 - INFO - ПРОЦЕСС МОДИФИКАЦИИ ЗАВЕРШЕН
+2025-08-28 21:54:46,892 - INFO - МОДИФИКАЦИЯ CSV ФАЙЛА
+2025-08-28 21:54:46,893 - INFO - Модификация файла: dm_f101_round_f_export.csv
+2025-08-28 21:54:46,893 - ERROR - Ошибка при модификации CSV: could not convert string to float: '2018-01-31'
+2025-08-28 21:54:46,893 - INFO - 
+ШАГ 2: Импорт модифицированных данных
+2025-08-28 21:54:46,943 - INFO - Импорт модифицированного файла: dm_f101_round_f_export.csv
+2025-08-28 21:54:47,030 - INFO - Успешное подключение к базе данных
+2025-08-28 21:54:47,049 - INFO - Отключение от базы данных
+2025-08-28 21:54:47,050 - INFO - Начало импорта данных из dm_f101_round_f_export.csv в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:54:47,148 - INFO - Успешное подключение к базе данных
+2025-08-28 21:54:47,158 - INFO - Успешно импортировано 18 строк в таблицу dm.dm_f101_round_f_v2
+2025-08-28 21:54:47,158 - INFO - Отключение от базы данных
+2025-08-28 21:54:47,159 - INFO - Модифицированные данные успешно импортированы
+2025-08-28 21:54:47,159 - INFO - ПРОЦЕСС МОДИФИКАЦИИ ЗАВЕРШЕН
